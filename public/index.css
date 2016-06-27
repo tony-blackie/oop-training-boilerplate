@@ -1,0 +1,9 @@
+.container {
+	width: 600px;
+}
+
+.inner-element {
+	width: 280px;
+	margin-left: 5px;
+	display: inline-block;
+}
