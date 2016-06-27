@@ -5,8 +5,12 @@ var app = express();
 
 app.use(express.static('./public', {index: 'index.html'}));
 
-app.get('/users', function() {
+app.get('/users', function(req, res) {
 	res.json(users);
+});
+
+app.get('/other', function(req, res) {
+	res.json(other);
 });
 
 app.listen(3000);

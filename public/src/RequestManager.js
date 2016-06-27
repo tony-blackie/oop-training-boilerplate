@@ -5,6 +5,11 @@ function RequestManager() {
 $.extend(RequestManager.prototype, {
 	alertSomething: function() {
 		alert(this.something)
+	},
+	getAllUsers: function() {
+		return $.ajax('/users', {
+			type: 'GET'
+		});
 	}
 });
 
